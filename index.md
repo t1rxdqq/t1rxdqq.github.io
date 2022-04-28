@@ -23,8 +23,9 @@ DB=DBKirosake(
 )
 ```
 
-### Data methods
-#### create_db
+### Data methode
+
+#### create_db - create database in your repository
 
 | FIELD      | TYPE | DESCRIPTION                           |
 |------------|:----:|---------------------------------------|
@@ -46,7 +47,7 @@ await DB.create_db(
 )
 ```
 
-#### insert_one
+#### insert_one - insert to database 1 data
 
 | FIELD    | TYPE          | DESCRIPTION                                          |
 |----------|:-------------:|------------------------------------------------------|
@@ -66,4 +67,75 @@ await DB.insert_one(
     value=10,
     method='r'
     )
+```
+
+#### insert_many - insert to database 2 or many data
+
+| FIELD     | TYPE            | DESCRIPTION                                          |
+|-----------|:---------------:|------------------------------------------------------|
+| `nameDB`  | str             | name your database                                   |
+| `folder`  | str             | folder where the data file is located                |
+| `ids`     | str             | get information for id in file                       |
+| `inserts` | dict            | specify what to change                               |
+
+```py
+await DB.insert_many(
+    nameDB='test',
+    folder='01',
+    ids='001',
+    inserts={'lvl':88,'cash':250}
+    )
+```
+
+#### get - return database
+
+| FIELD    | TYPE          | DESCRIPTION                                          |
+|----------|:-------------:|------------------------------------------------------|
+| `nameDB` | str           | name your database                                   |
+| `folder` | str           | folder where the data file is located                |
+| `ids`    | str           | get information for id in file                       |
+
+```py
+data=await DB.get(
+    nameDB='test',
+    folder='01',
+    ids='001',
+    )
+print(data)
+```
+
+#### get_sorted - return sorted database
+
+| FIELD     | TYPE          | DESCRIPTION                             |
+|-----------|:-------------:|-----------------------------------------|
+| `nameDB`  | str           | name your database                      |
+| `folder`  | str           | folder where the data file is located   |
+| `key`     | str           | data to be sorted                       |
+| `reverse` | str           | sort method                             |
+
+```py
+data=await DB.get_sorted(
+    nameDB='test',
+    folder='01',
+    key='cash',
+    reverse=True
+    )
+print(data)
+```
+
+#### datainfo - return size and length database
+
+| FIELD    | TYPE          | DESCRIPTION                                          |
+|----------|:-------------:|------------------------------------------------------|
+| `nameDB` | str           | name your database                                   |
+| `folder` | str           | folder where the data file is located                |
+| `ids`    | str           | get information for id in file                       |
+
+```py
+data=await DB.datainfo(
+    nameDB='test',
+    folder='01',
+    ids='001'
+    )
+print(data)
 ```
