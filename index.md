@@ -4,7 +4,8 @@ This module was created for convenient work with the GitHub repository. Create a
 
 ### Get started
 
-First you need to install the library:
+First you need to install the library
+
 `pip install db-kirosake`
 `pip3 install db-kirosake`
 
