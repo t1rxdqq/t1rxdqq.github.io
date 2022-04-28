@@ -17,7 +17,7 @@ Let's start setting up the working environment itself:
 
 ```py
 # setting in the file itself test.py
-from dbkirosake import dbkirosake
+from db_kirosake import dbkirosake
 DB=dbkirosake.DBKirosake(
     actoken, # your access token
     't1rxdqq/test' #this repository
