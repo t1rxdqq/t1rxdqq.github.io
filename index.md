@@ -1,15 +1,19 @@
 ## Welcome to Docs
 
+This module was created for convenient work with the GitHub repository. Create a cloud database from a regular GitHub repository to store information in json files.
 
+### Get started
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+First you need to install the library:
+`pip install db-kirosake` or `pip3 install db-kirosake`
 
-### Markdown
+Let's start setting up the working environment itself:
+> First you need to create a private repository in which your database will be located.
+> After that, in your profile, you must create an access token that will be used to connect to your account.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
+```py
+# setting in the file itself test.py
+DB=
 
 # Header 1
 ## Header 2
