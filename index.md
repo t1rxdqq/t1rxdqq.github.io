@@ -5,7 +5,8 @@ This module was created for convenient work with the GitHub repository. Create a
 ### Get started
 
 First you need to install the library:
-`pip install db-kirosake` or `pip3 install db-kirosake`
+`pip install db-kirosake`
+`pip3 install db-kirosake`
 
 Let's start setting up the working environment itself:
 > First you need to create a private repository in which your database will be located.
@@ -13,11 +14,12 @@ Let's start setting up the working environment itself:
 
 ```py
 # setting in the file itself test.py
-DB=
+from dbkirosake import DBKirosake
+DB=DBKirosake(
+    actoken, # your access token
+    't1rxdqq/test' #this repository
+)
 
-# Header 1
-## Header 2
-### Header 3
 
 - Bulleted
 - List
