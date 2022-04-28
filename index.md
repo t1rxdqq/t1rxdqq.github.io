@@ -12,6 +12,7 @@ First you need to install the library
 
 Let's start setting up the working environment itself:
 > First you need to create a private repository in which your database will be located.
+
 > After that, in your profile, you must create an access token that will be used to connect to your account.
 
 ```py
