@@ -7,6 +7,7 @@ This module was created for convenient work with the GitHub repository. Create a
 First you need to install the library
 
 `pip install db-kirosake`
+
 `pip3 install db-kirosake`
 
 Let's start setting up the working environment itself:
@@ -47,14 +48,14 @@ await DB.create_db(
 
 #### insert_one
 
-| FIELD    | TYPE          | DESCRIPTION                                        |
-|----------|:-------------:|----------------------------------------------------|
-| `nameDB` | str           | name your database                                 |
-| `folder` | str           | folder where the data file is located              |
-| `ids`    | str           | get information for id in file                     |
-| `insert` | str           | specify what to change                             |
-| `value`  | str/int/float | data to be entered                                 |
-| `method` | str           | method to entered ('r' or 'a'; 'replace' or 'add') |
+| FIELD    | TYPE          | DESCRIPTION                                          |
+|----------|:-------------:|------------------------------------------------------|
+| `nameDB` | str           | name your database                                   |
+| `folder` | str           | folder where the data file is located                |
+| `ids`    | str           | get information for id in file                       |
+| `insert` | str           | specify what to change                               |
+| `value`  | str/int/float | data to be entered                                   |
+| `method` | str           | method to entered `('r' or 'a'; 'replace' or 'add')` |
 
 ```py
 await DB.insert_one(
