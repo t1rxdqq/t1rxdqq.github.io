@@ -24,12 +24,12 @@ DB=DBKirosake(
 ### Data methods
 #### create_db
 
-| FIELD    | TYPE | DESCRIPTION                           |
-|----------|------|---------------------------------------|
-| nameDB   | str  | name your database                    |
-| folder   | str  | folder where the data file is located |
-| ids      | str  | get information for id in file        |
-| database | dict | structure for data storage            |
+| FIELD      | TYPE | DESCRIPTION                           |
+|------------|:----:|---------------------------------------|
+| `nameDB`   | str  | name your database                    |
+| `folder`   | str  | folder where the data file is located |
+| `ids`      | str  | get information for id in file        |
+| `database` | dict | structure for data storage            |
 
 ```py
 db={
@@ -46,14 +46,14 @@ await DB.create_db(
 
 #### insert_one
 
-| FIELD  | TYPE          | DESCRIPTION                                        |
-|--------|---------------|----------------------------------------------------|
-| nameDB | str           | name your database                                 |
-| folder | str           | folder where the data file is located              |
-| ids    | str           | get information for id in file                     |
-| insert | str           | specify what to change                             |
-| value  | str/int/float | data to be entered                                 |
-| method | str           | method to entered ('r' or 'a'; 'replace' or 'add') |
+| FIELD    | TYPE          | DESCRIPTION                                        |
+|----------|:-------------:|----------------------------------------------------|
+| `nameDB` | str           | name your database                                 |
+| `folder` | str           | folder where the data file is located              |
+| `ids`    | str           | get information for id in file                     |
+| `insert` | str           | specify what to change                             |
+| `value`  | str/int/float | data to be entered                                 |
+| `method` | str           | method to entered ('r' or 'a'; 'replace' or 'add') |
 
 ```py
 await DB.insert_one(
