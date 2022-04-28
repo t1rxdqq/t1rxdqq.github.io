@@ -23,6 +23,7 @@ DB=DBKirosake(
 
 ### Data methods
 #### create_db
+
 | FIELD    | TYPE | DESCRIPTION                           |
 |----------|------|---------------------------------------|
 | nameDB   | str  | name your database                    |
@@ -44,6 +45,7 @@ await DB.create_db(
 ```
 
 #### insert_one
+
 | FIELD  | TYPE          | DESCRIPTION                                        |
 |--------|---------------|----------------------------------------------------|
 | nameDB | str           | name your database                                 |
