@@ -19,18 +19,16 @@ DB=DBKirosake(
     actoken, # your access token
     't1rxdqq/test' #this repository
 )
-
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
+
+### Data methods
+
+| FIELD    | TYPE | DESCRIPTION                           |
+|----------|------|---------------------------------------|
+| nameDB   | str  | name your database                    |
+| folder   | str  | folder where the data file is located |
+| ids      | str  | get information for id in file        |
+| database | dict | structure for data storage            |
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
