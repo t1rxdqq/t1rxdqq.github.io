@@ -25,6 +25,8 @@ db=kiro.Connect(
 ...
 ```
 
+Token and cluster can be created on the [official website](https://kirodb.herokuapp.com/)
+
 The library has two classes - **kiro or asynckiro**
 They are similar methods, but the difference is in the function call.
 
