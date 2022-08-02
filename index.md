@@ -30,7 +30,7 @@ They are similar methods, but the difference is in the function call.
 
 **asynckiro** - only in asynchronous functions.
 
-#### get - returns information on the given key
+#### get() - returns information on the given key
 
 | FIELD      | TYPE | DESCRIPTION                           |
 |:-----------:|:----:|---------------------------------------|
@@ -40,7 +40,7 @@ They are similar methods, but the difference is in the function call.
 db.get(key="...")
 ```
 
-#### get_sort - returns sorted data
+#### get_sort() - returns sorted data
 
 | FIELD      | TYPE | DESCRIPTION                           |
 |:------------:|:----:|---------------------------------------|
@@ -51,7 +51,7 @@ db.get(key="...")
 db.get_sort(key="...", reverse=True)
 ```
 
-#### insert_one - insert to database 1 data
+#### insert_one() - insert to database 1 data
 
 | FIELD    | TYPE          | DESCRIPTION                                          |
 |:----------:|:-------------:|------------------------------------------------------|
@@ -67,7 +67,7 @@ db.insert_one(
 )
 ```
 
-#### insert_many - update multiple keys on an object
+#### insert_many() - update multiple keys on an object
 
 | FIELD     | TYPE            | DESCRIPTION                                          |
 |:-----------:|:---------------:|------------------------------------------------------|
@@ -84,7 +84,7 @@ db.insert_many(
 )
 ```
 
-#### create_data - creates an object with the specified data in your cluster
+#### create_data() - creates an object with the specified data in your cluster
 
 | FIELD    | TYPE          | DESCRIPTION                                          |
 |:---------:|:-------------:|------------------------------------------------------|
@@ -102,7 +102,7 @@ db.create_data(
 )
 ```
 
-#### delete_data - removes an object from your cluster 
+#### delete_data() - removes an object from your cluster 
 
 | FIELD    | TYPE          | DESCRIPTION                                          |
 |:---------:|:-------------:|------------------------------------------------------|
@@ -114,7 +114,7 @@ db.delete_data(
 )
 ```
 
-#### cluster_info - will return basic information about your cluster
+#### cluster_info() - will return basic information about your cluster
 
 ```py
 info=db.cluster_info()
