@@ -1,26 +1,22 @@
-## Welcome to Docs
+## Welcome to Docs kiroDB
 
-This module was created for convenient work with the GitHub repository. Create a cloud database from a regular GitHub repository to store information in json files.
+**kiroDB** - is a small cloud database created for use in your Python projects.
 
 ### Get started
 
 First you need to install the library
 
-`pip install db-kirosake`
+`pip install kirodb`
 
-`pip3 install db-kirosake`
+`pip3 install kirodb`
 
-Let's start setting up the working environment itself:
-> First you need to create a private repository in which your database will be located.
-
-> After that, in your profile, you must create an access token that will be used to connect to your account.
-
+**Connect your cluster.**
 ```py
-# setting in the file itself test.py
-from db_kirosake import dbkirosake
-DB=dbkirosake.DBKirosake(
-    actoken, # your access token
-    't1rxdqq/test' #this repository
+from kirodb import kiro
+TOKEN="..." # your token
+CLUSTER="..." # name your cluster
+db=kiro.Connect(
+    TOKEN, CLUSTER
 )
 ```
 
