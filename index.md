@@ -40,7 +40,7 @@ They are similar methods, but the difference is in the function call.
 db.get(key="...")
 ```
 
-#### get - returns sorted data
+#### get_sort - returns sorted data
 
 | FIELD      | TYPE | DESCRIPTION                           |
 |:------------:|:----:|---------------------------------------|
@@ -84,55 +84,32 @@ db.insert_many(
 )
 ```
 
-#### get - return database
+#### create_data - creates an object with the specified data in your cluster
 
 | FIELD    | TYPE          | DESCRIPTION                                          |
-|----------|:-------------:|------------------------------------------------------|
-| `nameDB` | str           | name your database                                   |
-| `folder` | str           | folder where the data file is located                |
-| `ids`    | str           | get information for id in file                       |
+|:---------:|:-------------:|------------------------------------------------------|
+| `id` | str           | identification name of your object in the cluster                                   |
+| `data` | dict           | assigns data to an object                 |
 
 ```py
-data=await DB.get(
-    nameDB='test',
-    folder='01',
-    ids='001',
-    )
-print(data)
+dictionary={
+    "username": "Carlos"
+    "age": 22,
+    "cash": 45.95
+}
+db.create_db(
+    id="...", data=dictionary
+)
 ```
 
-#### get_sorted - return sorted database
-
-| FIELD     | TYPE          | DESCRIPTION                             |
-|-----------|:-------------:|-----------------------------------------|
-| `nameDB`  | str           | name your database                      |
-| `folder`  | str           | folder where the data file is located   |
-| `key`     | str           | data to be sorted                       |
-| `reverse` | str           | sort method                             |
-
-```py
-data=await DB.get_sorted(
-    nameDB='test',
-    folder='01',
-    key='cash',
-    reverse=True
-    )
-print(data)
-```
-
-#### datainfo - return size and length database
+#### delete_data - removes an object from your cluster 
 
 | FIELD    | TYPE          | DESCRIPTION                                          |
-|----------|:-------------:|------------------------------------------------------|
-| `nameDB` | str           | name your database                                   |
-| `folder` | str           | folder where the data file is located                |
-| `ids`    | str           | get information for id in file                       |
+|:---------:|:-------------:|------------------------------------------------------|
+| `id` | str           | identification name of your object in the cluster                                   |
 
 ```py
-data=await DB.datainfo(
-    nameDB='test',
-    folder='01',
-    ids='001'
-    )
-print(data)
+db.delete_data(
+    id="..."
+)
 ```
