@@ -27,26 +27,14 @@ They are similar methods, but the difference is in the function call.
 
 **asynckiro** - only in asynchronous functions.
 
-#### create_db - create database in your repository
+#### get - returns information on the given key
 
 | FIELD      | TYPE | DESCRIPTION                           |
 |------------|:----:|---------------------------------------|
-| `nameDB`   | str  | name your database                    |
-| `folder`   | str  | folder where the data file is located |
-| `ids`      | str  | get information for id in file        |
-| `database` | dict | structure for data storage            |
+| `key`   | str  | key to search for data in the cluster if `None` return all data                     |
 
 ```py
-db={
-    'lvl':1,
-    'cash':10
-}
-await DB.create_db(
-    nameDB='test',
-    folder='01',
-    ids='001',
-    database=db
-)
+db.get(key="...")
 ```
 
 #### insert_one - insert to database 1 data
