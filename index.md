@@ -37,6 +37,17 @@ They are similar methods, but the difference is in the function call.
 db.get(key="...")
 ```
 
+#### get - returns sorted data
+
+| FIELD      | TYPE | DESCRIPTION                           |
+|------------|:----:|---------------------------------------|
+| `key`   | str  | key to sorted                    |
+| `reverse` | str | method sort from largest to smallest|
+
+```py
+db.get_sort(key="...", reverse=True)
+```
+
 #### insert_one - insert to database 1 data
 
 | FIELD    | TYPE          | DESCRIPTION                                          |
