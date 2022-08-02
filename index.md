@@ -97,7 +97,7 @@ dictionary={
     "age": 22,
     "cash": 45.95
 }
-db.create_db(
+db.create_data(
     id="...", data=dictionary
 )
 ```
@@ -113,3 +113,10 @@ db.delete_data(
     id="..."
 )
 ```
+
+#### cluster_info - will return basic information about your cluster
+
+```py
+info=db.cluster_info()
+```
+                
