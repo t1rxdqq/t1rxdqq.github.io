@@ -8,6 +8,8 @@ First you need to install the library
 
 `pip install kirodb`
 
+or
+
 `pip3 install kirodb`
 
 **Connect your cluster.**
