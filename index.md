@@ -20,7 +20,10 @@ db=kiro.Connect(
 )
 ```
 
-### Data methode
+The library has two classes - **kiro or asynckiro**
+They are similar methods, but the difference is in the function call.
+kiro - can be used in absolutely any code.
+asynckiro - only in asynchronous functions.
 
 #### create_db - create database in your repository
 
